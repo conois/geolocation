@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Encuentrame !</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 divheader">
+					<h1>Find Me!</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div id="divRuta">
+					<label>Partida</label>
+					<input type="text" name="partida" placeholder="Indique su punto de partida" id="partida" class="input-group col-lg-6">
+					<label>Destino</label>
+					<input type="text" name="llegada" placeholder="Indique donde quiere ir" id="destino" class="input-group col-lg-6">
+					<button id="trazar" class="btn btn-primary">Trazar ruta</button>
+					<button id="encuentrame" class="btn btn-primary">Encuentrame</button>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div id="map"></div>
+			</div>
+		</div> 
+	</section>
+
+	<section>
+		<div class="move" id="color"></div>
+	</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCggHFUL-v6lMEWpykkEEmqaDwqzcS3ASs&callback=initMap&libraries=places"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
